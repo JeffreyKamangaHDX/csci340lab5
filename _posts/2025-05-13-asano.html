@@ -1,0 +1,142 @@
+---
+layout: post
+title: "Post-Pretraining in Vision, and Language Foundation Models"
+subtitle: "Yuki M. Asano, University of Technology Nuremberg"
+custom_date: "May 13th 2025 @ 5pm"
+date: 2025-05-13
+background: '/img/posts/2025-05-13-tun-background.jpg'
+future_date: True
+online_event: False
+layer_shift: True
+meetup_link: https://www.meetup.com/heidelberg-artificial-intelligence-meetup/events/307336371
+---
+
+Foundation Models are reshaping the landscape of artificial intelligence, offering unprecedented capabilities across vision, language, and multi-modal tasks. From understanding spatial structure in images to aligning language models with the visual world, these innovations are opening up new frontiers in AI research.
+<br>
+<br>
+We are excited to welcome Yuki Asano, full Professor at the University of Technology Nuremberg and head of the Fundamental AI (FunAI) Lab, to our joint heidelberg.ai / NCT Data Science Seminar series.
+In this in-person event, Yuki Asano will present recent advances in building on top of pretrained Foundation Models to boost performance in dense prediction, efficient fine-tuning, and cross-modal understanding. The talk will cover novel methods such as NeCo for improving spatial perception in vision models, self-supervised time-tuning for video, and ultra-lightweight CLIP training. He will also explore surprising links between large language models and their visual grounding.
+<br>
+<br>
+We look forward to your participation in this exciting seminar, where you will valuable insights into how cutting-edge methods are pushing the boundaries of what Foundation Models can achieve.
+
+
+<!-- <br> -->
+
+<!-- TODO once talk is uploaded
+<h2 class="section-heading">Event Recording</h2><br>
+
+<iframe width="800" height="480" src="https://www.youtube.com/embed/zevj234NsBM?si=0BT3Qv2xqWyywSaK&amp;start=1" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+<h2 class="section-heading">Abstract</h2>
+<p>
+<!-- Put Abstract Here -->
+This talk explores how pretrained Foundation Models can be further enhanced for vision, language, and multi-modal tasks. It begins by addressing a key limitation in models like DINOv2: their lack of spatial understanding in images. To address this, the NeCo method [1] is introduced—a lightweight post-pretraining technique based on patch-nearest neighbors that significantly improves dense prediction performance while requiring only 16 GPU hours. The talk then highlights how video data can be utilized to further enhance dense understanding in pretrained image models such as DINO [2].
+
+In the domain of language models, recent work on parameter-efficient finetuning (PEFT) [3] and instruction tuning [4] is presented, offering practical strategies for adapting large models effectively. The final part of the talk introduces a novel approach to training CLIP models using only 10 GPU hours by leveraging pretrained unimodal encoders. Intriguingly, the results reveal a strong correlation between the performance of language models and their visual alignment capabilities [5].
+</p>
+
+
+<h2 class="section-heading">Biography</h2>
+<p>
+  <!-- Put Biography Here -->
+  Yuki Asano is the head of the <a href="https://www.utn.de/en/research/research-labs/fundamental-ai-lab/" style="text-decoration: underline">Fundamental AI (FunAI) Lab</a> and a full Professor at the <a href="https://www.utn.de/en/" style="text-decoration: underline">University of Technology Nuremberg</a>. Prior to this, he led the <a href="https://ivi.fnwi.uva.nl/vislab/" style="text-decoration: underline">QUVA Lab</a> at the <a href="https://www.uva.nl/en" style="text-decoration: underline">University of Amsterdam</a>, where he worked in close collaboration with <a href="https://www.qualcomm.com/research/ai-research" style="text-decoration: underline">Qualcomm AI Research</a>. He completed his PhD at the <a href="https://www.robots.ox.ac.uk/~vgg/" style="text-decoration: underline">Visual Geometry Group (VGG)</a> at the <a href="https://www.ox.ac.uk/" style="text-decoration: underline">University of Oxford</a>, under the supervision of <a href="https://www.robots.ox.ac.uk/~vedaldi/" style="text-decoration: underline">Andrea Vedaldi</a> and <a href="https://chrirupp.github.io" style="text-decoration: underline">Christian Rupprecht</a>. 
+
+
+
+</p>
+
+<div style="width:33%">
+  <br>
+  <center>
+    <a href="https://yukimasano.github.io"><img src="/img/posts/2025-05-13-asano_circle.png" width="90%"></a> <br><br>
+      <a href="https://yukimasano.github.io" style="text-decoration: underline">Yuki M. Asano</a>
+  </center>
+</div>
+
+<!-- Table with all important information in one Place! -->
+<h2 class="section-heading">Event Info</h2>
+<p>
+Please help us plan ahead by registrating for the event at our 
+<!-- ADD MEETUP LINK -->
+<a href={{page.meetup_link}} style="text-decoration: underline">
+  meetup event-site
+</a>. <br>
+<!-- After the event, there will be a social get-together with food and drinks courtesy of the Division of Medical Image Computing and Interactive Machine Learning Group at the DKFZ. -->
+</p>
+<!-- <div class="row">
+    <center> -->
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-0lax{text-align:left;vertical-align:top}
+    </style>
+    <table class="tg">
+    <thead>
+      <tr>
+        <th class="tg-0lax">What?</th>
+        <th class="tg-0lax">{{ page.title}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-0lax">Who?</td>
+        <td class="tg-0lax">{{ page.subtitle}}</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">When?</td>
+        <td class="tg-0lax">{{ page.custom_date}}</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Where?</td>
+        <td class="tg-0lax">DKFZ Communication Center (seminar rooms K1+K2), Im Neuenheimer Feld 280</td>
+      </tr>
+      <!-- <tr>
+        <td class="tg-0lax">Livestream</td>
+        <td class="tg-0lax"><a href="https://us02web.zoom.us/j/5824790176">Zoom</a></td>
+      </tr> -->
+      <tr>
+        <td class="tg-0lax">Registration</td>
+        <td class="tg-0lax">
+          <!-- ADD MEETUP LINK -->
+          <a href={{page.meetup_link}} style="text-decoration: underline">
+            meetup event-site
+          </a>
+          </td>
+      </tr>
+    </tbody>
+    </table>
+  <!-- <h2 class="section-heading">Corona rules</h2>
+  <p>
+      We are happy to see that so many of you are interested in this event! 
+    To allow as many people as possible to attend it, the following rules apply: <br>
+    Attendance requires proof of 3G corona status and wearing a FFP2 mask is mandatory throughout the whole event.
+  </p> -->
+    <!-- </center> -->
+<!-- </div> -->
+<!-- <h2 class="section-heading">Event's recording</h2><br>
+
+<iframe width="800" height="480" src="https://www.youtube.com/embed/At4rhuKu84o" frameborder="0"
+    allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+
+
+<h3 class="section-heading">References</h4>
+<p>
+  [1] Pariza, V., Salehi, M., Burghouts, G., Locatello, F., & Asano, Y. M. (2024). Near, far: Patch-ordering enhances vision foundation models’ scene understanding. In ICLR 2024.
+  <br>
+  <br>
+  [2] Salehi, M., Gavves, E., Snoek, C. G. M., & Asano, Y. M. (2023). Time Does Tell: Self-Supervised Time-Tuning of Dense Image Representations. In ICCV 2023. (+Ongoing work)
+  <br>
+  <br>
+  [3] Kopiczko, D., Blankevoort, T., & Asano, Y. M. (2024). VeRA: Vector-based Random Matrix Adaptation. In ICLR 2024.
+  <br>
+  <br>
+  [4] Kopiczko, D. J., Blankevoort, T., & Asano, Y. M. (2024). Bitune: Leveraging Bidirectional Attention to Improve Decoder-Only LLMs. arXiv preprint.
+  <br>
+  <br>
+  [5] Ruthardt, J., Burghouts, G. J., Belongie, S., & Asano, Y. M. (2024). Better Language Models Exhibit Higher Visual Alignment. arXiv preprint.
+</p>
