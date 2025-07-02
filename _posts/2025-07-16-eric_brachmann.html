@@ -1,0 +1,111 @@
+---
+layout: post
+title: "Pushing the Boundaries of Structure-from-Motion with Machine Learning"
+subtitle: "Eric Brachmann, Senior Staff Scientist at Niantic Spatial"
+custom_date: "July 16th 2024 @ 4pm" 
+date: 2025-07-16
+background: '/img/posts/2025-07-16_structure.png'
+future_date: True
+online_event: True
+layer_shift: True
+meetup_link: https://www.meetup.com/heidelberg-artificial-intelligence-meetup/events/308646638
+---
+AI has conquered the internet by storm with LLMs like ChatGPT. The interaction of AI Agents with the real world by means of robotics or augmented reality is generally seen to be the next frontier. To do this, however, AI Agent needs to be able to properly localize itself and the objects in its environment. These tasks are tackled by visual relocalisation and pose estimation, which allow the machine to visually perceive both its place in the world and its environment.
+<br>
+<br>
+We are excited to welcome <a href="https://ebrach.github.io" style="text-decoration: underline">Eric Brachmann</a>, Senior Staff Scientist at <a href="https://www.nianticspatial.com/" style="text-decoration: underline">Niantic Spatial</a> and a well-established researcher in visual relocalisation and pose estimation, to our joint Heidelberg.ai / NCT Data Science Seminar series.
+In this online seminar, Eric Brachmann will talk about his current work on camera relocalization where he merges machine learning with more traditional compute vision approaches.
+His work has been integrated into <a href="https://www.nianticspatial.com/products/visual-positioning-system" style="text-decoration: underline">Niantic's Visual Positioning System (VPS)</a> which powers game features in Ingress and Pokemon Go.
+<br>
+<br>
+We look forward to your participation, as this seminar will equip us with the knowledge how AI will be able to perceive the world around it and interact with it in a meaningful way, which is crucial for the future of robotics and augmented reality.
+
+
+
+<h2 class="section-heading">Abstract</h2>
+<p>
+<!-- Put Abstract Here -->
+In 3D computer vision, we are currently witnessing a remarkable renaissance of interest in structure-from-motion (SfM), i.e. estimating camera poses and 3D geometry from a collection of images. Of course, SfM was never gone. Rather, solutions based on feature-matching and traditional multi-view geometry matured to a state about 10 years ago that turned them into reliable off-the-shelf components for various 3D vision tasks. Still, traditional SfM approaches are most reliable when certain conditions are met. For example, reconstructing very few or a huge amount of images can be challenging. The talk will investigate how learning-based formulations of SfM can address these challenges. We will focus on scene coordinate regression, an implicit scene representation, that naturally avoids the explosion of complexity inherent to image-to-image matching when the number of images is large. The talk culminates in the presentation of ACEZero, a self-supervised scene coordinate regression pipeline, that is able to reconstruct 10.000 images in reasonable time.
+
+</p>
+
+<h2 class="section-heading">Biography</h2>
+<p>
+  <!-- Put Biography Here -->
+Eric Brachmann is a senior staff scientist at Niantic Spatial with extensive experience at the intersection of machine learning and computer vision, particularly in 3D vision. His work focuses on building and scaling the Visual Positioning System (VPS), with research interests spanning visual relocalization, pose estimation, robust optimization, end-to-end learning, and feature matching. He regularly publishes in top-tier computer vision conferences and is an active member of the community, serving as area chair and reviewer—receiving multiple outstanding reviewer recognitions. He has also co-organized several tutorials and workshops on visual relocalization and object pose estimation. Prior to his current role, he contributed to both academic and industry-led efforts in spatial computing and 3D vision research.
+
+<div style="width:33%">
+  <br>
+  <center>
+    <a href="https://ebrach.github.io"><img src="/img/posts/2025-07-16_brachmann.png" width="90%"></a> <br><br>
+      <a href="https://ebrach.github.io" style="text-decoration: underline">Eric Brachmann</a>
+  </center>
+</div>
+
+<!-- Table with all important information in one Place! -->
+<h2 class="section-heading">Event Info</h2>
+<p>
+Please help us plan ahead by registrating for the event via Meetup: 
+<!-- ADD MEETUP LINK -->
+<br>
+<a href={{page.meetup_link}} style="text-decoration: underline">
+  Event Registration
+</a>. <br> <br>
+</p>
+<!-- <div class="row">
+    <center> -->
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-0lax{text-align:left;vertical-align:top}
+    </style>
+    <table class="tg">
+    <thead>
+      <tr>
+        <th class="tg-0lax">What?</th>
+        <th class="tg-0lax">{{ page.title}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-0lax">Who?</td>
+        <td class="tg-0lax">{{ page.subtitle}}</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">When?</td>
+        <td class="tg-0lax">{{ page.custom_date}}</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Where?</td>
+        <td class="tg-0lax"><a href="https://dkfz-de.zoom-x.de/j/4525206170" style="text-decoration: underline">Zoom</a></td>
+      </tr>
+      <!-- <tr>
+        <td class="tg-0lax">Livestream</td>
+        <td class="tg-0lax"><a href="https://us02web.zoom.us/j/5824790176">Zoom</a></td>
+      </tr> -->
+      <tr>
+        <td class="tg-0lax">Registration</td>
+        <td class="tg-0lax">
+          <!-- ADD MEETUP LINK -->
+          <a href={{page.meetup_link}} style="text-decoration: underline">
+            meetup event-site
+          </a>
+          </td>
+      </tr>
+    </tbody>
+    </table>
+  <!-- <h2 class="section-heading">Corona rules</h2>
+  <p>
+      We are happy to see that so many of you are interested in this event! 
+    To allow as many people as possible to attend it, the following rules apply: <br>
+    Attendance requires proof of 3G corona status and wearing a FFP2 mask is mandatory throughout the whole event.
+  </p> -->
+    <!-- </center> -->
+<!-- </div> -->
+<!-- <h2 class="section-heading">Event's recording</h2><br>
+
+<iframe width="800" height="480" src="https://www.youtube.com/embed/At4rhuKu84o" frameborder="0"
+    allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
