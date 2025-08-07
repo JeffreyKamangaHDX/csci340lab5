@@ -1,91 +1,24 @@
-<!-- Footer -->
-
 <hr>
 
 <footer>
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <p class="copyright text-muted">Impressum: <a href="https://www.dkfz.de/de/impressum.html">https://www.dkfz.de/de/impressum.html</a></p>
-      </div>
-    </div>
-  </div> -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-     	<p class="copyright text-muted">all gifs hosted by <a href="https://giphy.com">giphy.com</a> or  <a href="https://tumblr.com">tumblr.com</a> -- Icons by <a href="https://icons8.com">Icons8.com</a></p>
-        <p class="copyright text-muted">Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}</p>
+      <div class="col-lg-8 col-md-10 mx-auto text-center">
+        <p class="copyright text-muted">
+          All GIFs hosted by 
+          <a href="https://giphy.com" target="_blank" rel="noopener">giphy.com</a> or  
+          <a href="https://tumblr.com" target="_blank" rel="noopener">tumblr.com</a> — 
+          Icons by <a href="https://icons8.com" target="_blank" rel="noopener">Icons8.com</a>
+        </p>
+        <p class="copyright text-muted">
+          &copy; {{ site.author }} {{ 'now' | date: "%Y" }}
+        </p>
+          <p class="small text-muted">
+          <a href="{{ '/imprint/' | relative_url }}">Imprint</a> |
+        <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
+        </p>
+
       </div>
     </div>
   </div>
-  <!-- Take out base Footer -->
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <ul class="list-inline text-center">
-          {% if site.email %}
-          <li class="list-inline-item">
-            <a href="mailto:{{ site.email | encode_email }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
-          {% if site.twitter_username %}
-          <li class="list-inline-item">
-            <a href="https://twitter.com/{{ site.twitter_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
-          {% if site.facebook_username %}
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com/{{ site.facebook_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
-          {% if site.linkedin_username %}
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
-          {% if site.github_username %}
-          <li class="list-inline-item">
-            <a href="https://github.com/{{ site.github_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
-          {% if site.instagram_username %}
-          <li class="list-inline-item">
-            <a href="https://instagram.com/{{ site.instagram_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
-        </ul>
-        <p class="copyright text-muted">Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}</p>
-      </div>
-    </div>
-  </div>-->
-</footer> 
+</footer>
