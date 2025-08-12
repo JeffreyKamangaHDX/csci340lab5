@@ -3,18 +3,13 @@
 <!-- <nav class="navbar navbar-light fixed-top" id="mainNav"> -->
   <div class="container">
     <!-- <a class="navbar-brand" href="{{"/" | relative_url }}">{{ site.title | escape }}</a> -->
-    <div class="d-none d-lg-block">
-      <!-- hide on screens smaller than lg -->
-      <a class="navbar-brand" href="{{"/" | relative_url }}">
-        <img width="35%" src="{{"/img/hai/logo_left_offwhite.png" | relative_url }}" alt="" class="image1" /> 
-      </a>
-    </div>
-    <!-- <a class="navbar-brand" href="{{"/" | relative_url }}">
-      <img width="35%" src="{{"/img/hai/logo_left_offwhite.png" | relative_url }}" alt="" class="image1" /> 
-    </a> -->
-    <!-- This does not get shown currently -- but also does not work for current website! -->
-    <!-- <img width="35%" href="{{"/img/hai/logo_left_black_300.png" | relative_url }}" alt="" class="image2" />  -->
-    <!-- </a> -->
+<div class="d-none d-lg-block">
+  <!-- hide on screens smaller than lg -->
+  <a class="navbar-brand" href="{{ "/" | relative_url }}" style="display: flex; align-items: center; gap: 20px;">
+    <img width="45%" src="{{ "/img/hai/logo_left_offwhite.png" | relative_url }}" alt="Logo Left Offwhite" class="image1" /> 
+    <img width="55%" src="{{ "/img/hai/dkfz_logo.png" | relative_url }}" alt="DKFZ Logo" class="image1" />
+  </a>
+</div>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <img width="35%" src="{{"/img/hai/logo_left_black_300.png"| relative_url}}" alt="" class="image2" />
       <!-- Menu -->
