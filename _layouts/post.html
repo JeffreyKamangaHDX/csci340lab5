@@ -4,7 +4,10 @@ layout: default
 
 <!-- Page Header -->
 {% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+<!-- This opens images from local folder. -->
+<!-- <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')"> -->
+<!-- Take pure open from url for giphy -->
+<header class="masthead" style="background-image: url('{{ page.background }}')">
   {% else %}
   <header class="masthead">
     {% endif %}
@@ -17,10 +20,24 @@ layout: default
             {% if page.subtitle %}
             <h2 class="subheading">{{ page.subtitle }}</h2>
             {% endif %}
-            <span class="meta">Posted by
-              <a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>
-              on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html
-              content=page.content %}
+            <span class="meta">
+              <!-- Posted by -->
+              <!-- <a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a> -->
+              {% if page.future_date %}
+                upcoming:
+              {% endif %}
+              {% if page.custom_date %}
+                {{ page.custom_date}}
+              {% else %}
+                {{ page.date | date: '%B %d, %Y' }}
+              {% endif %}
+              {% if page.online_event %}
+              <br>
+              <br>
+                <h4 class="subsubheading"><img src="/img/utils/livestream-high-res.png" width="5%"> Online Event</h4>
+              {% endif %}
+              <!-- on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html
+              content=page.content %} -->
             </span>
           </div>
         </div>

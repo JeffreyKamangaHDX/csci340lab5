@@ -1,3 +1,13 @@
+# VS-Code
+.vscode
+
+# MAC OS
+.DS_Store
+
+#Jekyll Stuff
+.jekyll-cache
+
+# Template
 _site
 .sass-cache
 node_modules
